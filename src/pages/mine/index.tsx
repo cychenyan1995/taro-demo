@@ -1,8 +1,6 @@
 import Taro, { Component, Config } from '@tarojs/taro'
-import { View, Text, Image } from '@tarojs/components'
-import { AtInput, AtButton } from 'taro-ui'
+import { View, Text } from '@tarojs/components'
 import './index.scss'
-import logo from '../../assets/images/logo.jpg'
 
 export default class Index extends Component {
 
@@ -14,7 +12,7 @@ export default class Index extends Component {
    * 提示和声明 navigationBarTextStyle: 'black' | 'white' 类型冲突, 需要显示声明类型
    */
   config: Config = {
-    navigationBarTitleText: '首页'
+    navigationBarTitleText: '首页2'
   }
 
   componentWillMount () { }
@@ -27,19 +25,10 @@ export default class Index extends Component {
 
   componentDidHide () { }
 
-  nameChange () {}
-
-  submit () {}
-
   render () {
     return (
-      <View className='page'>
-        <Image src={logo} className="image"></Image>
-        <View className='page-form'>
-          <AtInput type="text" name="userName" onChange={this.nameChange} placeholder="请输入用户名"/>
-          <AtButton type="primary" onClick={this.submit}>登录</AtButton>
-        </View>
-        <Text>Hello world!</Text>
+      <View>
+        <Text>Hello world3333!</Text>
       </View>
     )
   }

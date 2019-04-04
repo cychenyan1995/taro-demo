@@ -20,13 +20,31 @@ class App extends Component {
    */
   config: Config = {
     pages: [
-      'pages/index/index'
+      'pages/index/index',
+      'pages/mine/index',
     ],
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
       navigationBarTitleText: 'WeChat',
       navigationBarTextStyle: 'black'
+    },
+    tabBar: {
+      color: "#8D93A8",
+      selectedColor: "#24292e",
+      backgroundColor: "#FBFBFB",
+      borderStyle: "white",
+      list: [{
+        pagePath: "pages/index/index",
+        text: "首页",
+        iconPath: "./assets/images/home.png",
+        selectedIconPath: "./assets/images/home-selected.png"
+      },{
+        pagePath: "pages/mine/index",
+        text: "我的",
+        iconPath: "./assets/images/mine.png",
+        selectedIconPath: "./assets/images/mine-selected.png"
+      }]
     }
   }
 
