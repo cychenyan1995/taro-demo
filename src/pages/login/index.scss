@@ -1,0 +1,21 @@
+.page{
+    padding: 30px 40px 0 30px;
+    image{
+        width: 300px;
+        height: 300px;
+        display: block;
+        margin: 0 auto;
+    }
+    &-form{
+        width: 100%;
+        &-submit{
+            margin-top: 150px;
+            width: 500px;
+        }
+    }
+    // modal自带的样式，  增加一部分样式
+    .at-modal__content{
+        text-align: center;
+        line-height: 90px;
+    }
+}

@@ -1,8 +1,8 @@
 {
 	"miniprogramRoot": "./dist",
-	"projectname": "taro-demo",
+	"projectname": "taro-cy",
 	"description": "demo",
-	"appid": "wx03f3149a05a179c2",
+	"appid": "wx189249e28a0e0952",
 	"setting": {
 		"urlCheck": true,
 		"es6": false,
