@@ -1,0 +1,46 @@
+.list{
+    // 用百分比表示宽度  自适应
+    width: 92%;
+    margin: 4% 4% 0;
+    // margin: 0 30px 20px;
+    padding: 20px 0;
+    font-size: 32px;
+    border-bottom: 2px solid #ECEFF3;
+    &-title{
+        width: 100%;
+        font-size: 36px;
+        color:  #6190e8;
+        font-weight: 600;
+        // ....表示
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    &-description{
+        font-size: 28px;
+        font-family: PingFang-SC-Medium;
+        color: #666666;
+        margin: 10px 0 30px;
+    }
+    &-operation{
+        image{
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            vertical-align: center;
+        }
+        &-star, &-fork, &-date{
+            display: inline-block;
+            margin-right: 30px;
+            &-text{
+                font-size: 24px;
+                color: #333744;
+                vertical-align: center;
+            }
+        }
+        &-date{
+            float: right;
+        }
+        
+    }
+}

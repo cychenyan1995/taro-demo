@@ -23,6 +23,7 @@ class App extends Component {
       'pages/index/index',
       'pages/login/index',
       'pages/mine/index',
+      '/page/auth/index'
     ],
     window: {
       backgroundTextStyle: 'light',
