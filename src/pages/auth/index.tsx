@@ -1,6 +1,7 @@
 import Taro, { Component, Config } from '@tarojs/taro'
 import { View, Button, Image } from '@tarojs/components'
 import logo from '../../assets/images/logo.jpg'
+import './index.scss'
 
 interface IState{
     text: string

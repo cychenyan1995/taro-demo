@@ -79,12 +79,12 @@ export default class Index extends Component<{}, IState> {
             // 登录成功后加载数据
             this.showRecordList()
           }else{
-            Taro.redirectTo({url: '/page/login/index'})
+            Taro.redirectTo({url: '/pages/login/index'})
           }
         }else{
           console.log('验证失败')
           // 认证
-          Taro.redirectTo({url: '/page/auth/index'})
+          Taro.redirectTo({url: '/pages/auth/index'})
         }
       }
     })
