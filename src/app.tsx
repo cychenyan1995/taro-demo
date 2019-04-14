@@ -3,6 +3,7 @@ import Index from './pages/index'
 import dva from './utils/dva'
 import models from './models';
 import { Provider } from '@tarojs/redux'
+import Home from './pages/home';
 
 import './app.scss'
 
@@ -30,10 +31,13 @@ class App extends Component {
    */
   config: Config = {
     pages: [
-      'pages/index/index',
-      'pages/login/index',
+      'pages/home/index',
       'pages/mine/index',
-      'pages/auth/index'
+      'pages/login/index',
+      'pages/index/index',
+      
+      'pages/auth/index',
+      'pages/search/index'
     ],
     window: {
       backgroundTextStyle: 'light',
@@ -73,7 +77,7 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <Index />
+        <Home />
       </Provider>
     )
   }

@@ -60,10 +60,12 @@ export default class Main extends Component<{}, IState> {
       <View className='page'>
         <View className='page-title'>
           <AtAvatar circle image={this.state.avatar}></AtAvatar>
+          <View>
           <Text>{this.state.userName}</Text>
+          </View>
         </View>
         <View className='page-admin'>
-          <View className='page-item' onClick={this.showRepositories}>
+          <View className='page-admin-item' onClick={this.showRepositories}>
             <Image src={repo}></Image>
             <Text className='text'>我的仓库</Text>
             <Image src={enter} className='right'></Image>
@@ -73,17 +75,17 @@ export default class Main extends Component<{}, IState> {
             <Text className='text' >我的收藏</Text>
             <Image className='right' src={enter} />
           </View>
-          <View className='page-item'>
+          <View className='page-admin-item'>
             <Image src={followers}></Image>
             <Text className='text'>关注我的</Text>
             <Image src={enter} className='right'></Image>
           </View>
-          <View className='page-item'>
+          <View className='page-admin-item'>
             <Image src={following}></Image>
             <Text className='text'>我关注的</Text>
             <Image src={enter} className='right'></Image>
           </View>
-          <View className='page-item'>
+          <View className='page-admin-item'>
             <Image src={logout}></Image>
             <Text className='text'>退出登录</Text>
             <Image src={enter} className='right'></Image>

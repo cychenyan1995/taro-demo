@@ -63,13 +63,8 @@ export default class Index extends Component<{}, IState> {
   }
 
   showLogin = () => {
-    // if (Taro.getStorageSync('userInfo') && JSON.parse(Taro.getStorageSync('userInfo')).name) {
-    //   // console.log('登录成功')
-    //   // 登录成功后加载数据
-    //   this.showRecordList()
-    // } else {
-    //   Taro.redirectTo({ url: '/page/login/index' })
-    // }
+    // 保存this
+    let that = this
     // 返回值中只会出现小程序已经向用户请求过的权限。
     Taro.getSetting({
       success: function(response){
@@ -77,7 +72,7 @@ export default class Index extends Component<{}, IState> {
           if(Taro.getStorageSync('userInfo') && JSON.parse(Taro.getStorageSync('userInfo')).name){
             // console.log('登录成功')
             // 登录成功后加载数据
-            this.showRecordList()
+            that.showRecordList()
           }else{
             Taro.redirectTo({url: '/pages/login/index'})
           }
@@ -112,7 +107,7 @@ export default class Index extends Component<{}, IState> {
   // 搜索
   toSearch = () => {
     Taro.navigateTo({
-      url: '/page/search/index'
+      url: '/pages/search/index'
     })
   }
   render() {
